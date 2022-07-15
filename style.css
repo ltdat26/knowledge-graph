@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400);
+
+[data-theme="dark"] {
+  --bg-color: #637d8a;
+  --text-color: #e0e0e0;
+  --stroke-color: #e0e0e0;
+}
+
+[data-theme="light"] {
+  --bg-color: #cfd8dc;
+  --text-color: #212121;
+  --stroke-color: #999;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Roboto", Roboto, sans-serif;
+  position: relative;
+  transition: 1s;
+}
+
+.label {
+  font: "Roboto", sans-serif;
+  pointer-events: none;
+}
+
+
+.node {
+  stroke: #000;
+  stroke-width: 1.5px;
+
+}
+
+.link {
+  stroke: var(--stroke-color);
+  stroke-width: 1.5px;
+}
+
+.themes {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+}
